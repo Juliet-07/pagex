@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  body {
+    font-family: "Nunito Variable", sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@theme {
+  /* FONT FAMILY */
+  --font-nunito: "Nunito", sans-serif;
+  --font-grace: "Covered By Your Grace", sans-serif;
+
+  /* BREAK POINTS */
+  --breakpoint-3xl: 120rem;
+
+  /* COLORS PRIMARY */
+  --color-primary-100: #379e23;
+  --color-primary-200: #a3d274;
+  --color-primary-300: #85c947;
+  --color-primary-400: #66bd1a;
+  --color-primary-500: #379e23;
+  --color-primary-600: #2d8a1e;
+  --color-primary-700: #236e19;
+  --color-primary-800: #195a14;
+  --color-primary-900: #0f460f;
+
+  /* COLORS BLACK */
+  --color-black-100: #484848;
+  --color-black-200: #303030;
+  --color-black-300: #1a1a1a;
+  --color-black-400: #121212;
+  --color-black-500: #0a0a0a;
+  --color-black-600: #020202;
+  --color-black-700: #000000;
+
+  /* COLORS SECONDARY */
+  --color-secondary-100: #d4b280;
+  --color-secondary-200: #c69c73;
+  --color-secondary-300: #b78766;
+  --color-secondary-400: #a77b2b;
+  --color-secondary-500: #9b6c28;
+  --color-secondary-600: #8a5f24;
+  --color-secondary-700: #7a5120;
+  --color-secondary-800: #6a4320;
+  --color-secondary-900: #5a3520;
+
+  /* COLORS GRAY */
+  --color-light-gray: #f9f9f9;
+  --color-gray-100: #e6e6e6;
+  --color-gray-200: #d1d1d1;
+  --color-gray-300: #b9b9b9;
+  --color-gray-400: #a0a0a0;
+  --color-gray-500: #bcbbc1;
+  --color-gray-600: #9e9e9e;
+  --color-gray-700: #828282;
+  --color-gray-800: #666666;
+  --color-gray-900: #4c4c4c;
+
+  /* COLORS WARNING */
+  --color-warning-100: #fee8b4;
+  --color-warning-200: #fddc77;
+  --color-warning-300: #fbc93a;
+  --color-warning-400: #f59e0b;
+  --color-warning-500: #d78a09;
+  --color-warning-600: #b77908;
+  --color-warning-700: #996407;
+  --color-warning-800: #7e5106;
+  --color-warning-900: #643f05;
+
+  /* COLORS SUCCESS */
+  --color-success-100: #a8f6a5;
+  --color-success-200: #7be77f;
+  --color-success-300: #4ee759;
+  --color-success-400: #22c55e;
+  --color-success-500: #1a9f4b;
+  --color-success-600: #14863d;
+  --color-success-700: #0f6e2f;
+  --color-success-800: #0a5621;
+  --color-success-900: #06401b;
+
+  /* COLORS ERROR */
+  --color-error-100: #fbc6c6;
+  --color-error-200: #f8a8a8;
+  --color-error-300: #f58a8a;
+  --color-error-400: #f76b6b;
+  --color-error-500: #f64f4f;
+  --color-error-600: #e04a4a;
+  --color-error-700: #d14545;
+  --color-error-800: #c14040;
+  --color-error-900: #b13b3b;
+
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+  /* ... */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 
+      
+        
+      extend: {
+        // Responsive typography (Headlines, Body, Labels)
+        fontSize: {
+          headline: {
+            lg: ["32px", "40px"],
+            md: ["28px", "36px"],
+            sm: ["24px", "32px"],
+          },
+          body: {
+            lg: ["22px", "24px"],
+            md: ["18px", "26px"],
+            sm: ["16px", "16px"],
+          },
+          label: {
+            lg: ["14px", "20px"],
+            md: ["12px", "18px"],
+            sm: ["11px", "16px"],
+          },
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+    },
+  },
+} */
