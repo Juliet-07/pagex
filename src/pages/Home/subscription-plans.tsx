@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { IoCheckmark } from "react-icons/io5";
 
 type Plan = {
@@ -9,15 +10,16 @@ type Plan = {
   note2: string;
   recommended?: boolean;
   features: string[];
+  flexibility: string;
 };
 
 const monthlyPlans: Plan[] = [
   {
     name: "Roots",
     price: "₦1000.00",
-    note1: "For entry-level users, small-scale producers",
+    note1: "For small-scale producers & agribusinesses",
     description:
-      "Well Done Comrade! You are building a strong, foundational business, PAGEX will be supporting you with the essential features you need to Blossom.",
+      "Welldone Comrade! You are building a strong, foundational business, PAGEX will be supporting you with the essential features you need to Blossom.",
     note2: "Grow Deep, Stand Strong!",
     features: [
       "Marketplace access",
@@ -27,12 +29,13 @@ const monthlyPlans: Plan[] = [
       "Free access to learning resources",
       "Points and coupon system",
     ],
+    flexibility: "Flexibility: Pause or cancel anytime",
   },
   {
     name: "Blossom",
     price: "₦1000.00",
     recommended: true,
-    note1: "For growing businesses, medium-sized producers",
+    note1: "For mid-sized producers and growing agribusinesses",
     description:
       "You have come a long way, Ready to branch out?  Transition from growth to expansion, and reach new markets.",
     note2: "Blossom into New Markets.",
@@ -46,11 +49,12 @@ const monthlyPlans: Plan[] = [
       "Points and coupon system",
       "Supply Chain Insights",
     ],
+    flexibility: "Flexibility: Pause or cancel anytime",
   },
   {
     name: "Pinnacle",
     price: "₦1000.00",
-    note1: "For large-scale producers or established businesses",
+    note1: "For large-scale producers and agribusinesses",
     description:
       "It's been a long road, and so far you have aced it. Now, it's time to dominate the market with our full support and advanced tools!",
     note2: "Reach the Peak of Market Leadership.",
@@ -64,6 +68,7 @@ const monthlyPlans: Plan[] = [
       "Loan/Credit Access",
       "Points and coupon system",
     ],
+    flexibility: "Flexibility: Pause or cancel anytime",
   },
 ];
 
@@ -73,10 +78,15 @@ const yearlyPlans: Plan[] = monthlyPlans.map((plan) => ({
 }));
 
 const PricingSection: React.FC = () => {
+  const navigate = useNavigate();
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">(
     "monthly"
   );
   const activePlans = billingCycle === "monthly" ? monthlyPlans : yearlyPlans;
+
+  const getStarted = () => {
+    navigate("/waitlist");
+  };
 
   return (
     <section className="p-4 md:p-10 2xl:p-20 bg-white">
@@ -126,7 +136,7 @@ const PricingSection: React.FC = () => {
               </h3>
               <p className="text-green-700 text-2xl font-bold mb-2">
                 {plan.price}{" "}
-                <span className="text-sm text-gray-600 font-normal">/mo</span>
+                <span className="text-sm text-gray-600 font-normal">/month</span>
               </p>
             </div>
             <hr />
@@ -135,9 +145,12 @@ const PricingSection: React.FC = () => {
               <p className="text-[#151411]/60 text-sm md:text-base">
                 {plan.description}
               </p>
-              <p className=" text-gray-600 text-sm">{plan.note2}</p>
+              <p className=" text-black text-sm">{plan.note2}</p>
             </div>
-            <button className="w-full bg-primary-100 text-white font-medium py-2 rounded-lg hover:bg-green-700 transition my-4">
+            <button
+              onClick={getStarted}
+              className="w-full bg-primary-100 text-white font-medium py-2 rounded-lg hover:bg-green-700 transition my-4 cursor-pointer"
+            >
               Get Started
             </button>
             <ul className="space-y-4 text-sm text-gray-700 my-6">
@@ -151,6 +164,9 @@ const PricingSection: React.FC = () => {
                 </>
               ))}
             </ul>
+            <p className="text-center py-4 text-xs md:text-sm">
+              {plan.flexibility}
+            </p>
           </div>
         ))}
       </div>

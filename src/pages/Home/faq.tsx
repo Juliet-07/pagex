@@ -46,7 +46,7 @@ const FAQ = () => {
         </p>
         <p className="text-black-100">
           Explore to learn more about how Pazelgreen can empower your
-          <br /> business with tech-driven solutions
+          <br className="hidden md:block" /> agribusiness with tech-driven solutions
         </p>
       </div>
       <div className="grid md:grid-cols-3 gap-4 md:gap-10 2xl:gap-20 my-4 md:my-10">

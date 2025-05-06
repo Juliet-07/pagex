@@ -12,15 +12,13 @@ interface HeroProps {
 const Hero = ({ content, backgroundImage }: HeroProps) => {
   return (
     <div
-      className="hero__container min-h-[80vh] w-screen  py-[12%] bg-cover bg-primary-800/60  bg-center flex items-center justify-center"
+      className="w-screen min-h-[80vh] relative py-[12%] md:py-[8%] bg-cover bg-center bg-no-repeat flex md:items-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
-        backgroundPosition: "center",
-        backgroundSize: "contain",
-        backgroundRepeat: "no-repeat",
+        backgroundImage: `url(${backgroundImage})`,
       }}
     >
-      <div className="hero__content ">{content}</div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[#1C1C1C]/75 z-[2]"></div>
+      <div className="w-full relative z-[3] p-4 md:mt-10">{content}</div>
     </div>
   );
 };

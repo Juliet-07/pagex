@@ -548,7 +548,7 @@ const About = () => {
         </div>
       </div>
       {/* Join The Waitlist */}
-      <div className="waitlist p-5 py-10 sm:p-10 sm:px-16">
+      <div className="waitlist p-5 sm:p-10 sm:px-16">
         <div
           className="wrapper rounded-3xl grid grid-cols-1 md:grid-cols-2 gap-12 p-5  sm:p-14 text-white"
           style={{
@@ -558,25 +558,25 @@ const About = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="text space-y-8">
+          <div className="text space-y-5 md:space-y-10">
             <h3 className="text-3xl md:text-5xl font-bold ">
               Join the Waitlist!
             </h3>
-            <p className="text-white/80 text-sm sm:text-2xl font-medium ">
+            <p className="text-white/80 text-sm sm:text-2xl font-medium leading-6 md:leading-10">
               Be the first to experience the future of agritech with Pazelgreen.
               Sign up now to secure early access to our innovative tools and
               resources designed to help you grow your business, increase
-              efficiency, and stay ahead of the competition.{" "}
+              efficiency, and stay ahead of competition.{" "}
             </p>
-            <p className="text-white/80 text-sm sm:text-2xl font-medium">
+            <p className="text-white/80 text-sm sm:text-2xl font-medium pb-4 md:pb-0">
               Don&#39;t miss out—limited spots available!
             </p>
 
             <Link
               to="/waitlist"
-              className="bg-white text-primary-100 capitalize rounded-xl hover:bg-white hover:text-green-800 font-medium transition duration-300 ease-in-out p-4"
+              className="bg-white text-primary-100 rounded-xl hover:bg-white hover:text-green-800 font-semibold transition duration-300 ease-in-out p-4"
             >
-              Join the waitlist!
+              Join the Waitlist!
             </Link>
           </div>
           <div className="image relative min-h-[350px] sm:min-h-[417px] overflow-hidden rounded-2xl">

@@ -61,14 +61,14 @@ const whyUs: WhyUs[] = [
 
 const MarketPlace = () => {
   const places = [
-    { id: 1, icon: Icon1, label: "Digital Market Linkage" },
+    { id: 1, icon: Icon1, label: "Market Linkage" },
     { id: 2, icon: Icon2, label: "Inventory Management" },
-    { id: 3, icon: Icon3, label: "Credit & Financing Access" },
-    { id: 4, icon: Icon4, label: "Supply Chain Traceability" },
-    { id: 5, icon: Icon3, label: "Data Analytics & Reporting" },
-    { id: 6, icon: Icon4, label: "Educational Resources" },
+    { id: 3, icon: Icon3, label: "Access To Opportunities" },
+    { id: 4, icon: Icon4, label: "Logistics & Supply Chain Traceability" },
+    { id: 5, icon: Icon3, label: "Business & Market Intelligence" },
+    { id: 6, icon: Icon4, label: "Educational & Climate-Smart Resources" },
     { id: 7, icon: Icon3, label: "E-Wallet Solutions" },
-    { id: 8, icon: Icon4, label: "Climate-Smart Practices" },
+    { id: 8, icon: Icon4, label: "Access to Agri-Business Support" },
   ];
   return (
     <section className="h-full font-nunito">
@@ -76,15 +76,15 @@ const MarketPlace = () => {
       <Hero
         backgroundImage={BGImage}
         content={
-          <div className="text-center text-white space-2-3 md:space-y-8  w-[90%]  mx-auto">
-            <h1 className="hero__title text-[32px] md:text-7xl font-semibold">
+          <div className="md:w-[90%] text-center text-white space-y-5 md:space-y-8 mx-auto pt-[100px] md:pt-0">
+            <h1 className="text-4xl md:text-7xl font-semibold">
               Transforming the
               <span className="text-[#FCA321]"> Agri-Food</span>{" "}
               <br className="hidden md:block" />
               Supply Chain
             </h1>
-            <p className="hero__description md:text-2xl md:mt-4 md:w-3/4 mx-auto mb-4">
-              PAGEX: Adigital marketplace to optimise the agri-supply chain.
+            <p className="text-lg md:text-2xl md:w-3/4 mx-auto">
+              PAGEX: A digital marketplace to optimise the agri-supply chain.
             </p>
             <Link to="/waitlist">
               <button className="w-[138px] h-10 bg-[#379E23] text-white capitalize rounded-xl hover:text-primary-800 transition duration-300 ease-in-out font-bold">
@@ -97,11 +97,11 @@ const MarketPlace = () => {
       {/* About Pagex */}
       <div className="w-full p-4 md:p-10 2xl:p-20 flex flex-col md:flex-row justify-between font-nunito gap-10">
         <div className="md:w-[40%]">
-          <p className="text-3xl md:text-6xl font-bold text-primary-100">
+          <p className="text-2xl md:text-5xl font-bold text-primary-100">
             About PAGEX
           </p>
           <p className="text-sm md:text-base text-[#878680] py-3">
-            it is a transformational platform designed to revolutionize the
+            It is a transformational platform designed to revolutionize the
             Agri-Food supply chain by bridging gaps between key players and
             supporting sectors. Our solution addresses critical challenges such
             as Agro-Waste management, post-harvest loss, supply chain
@@ -112,12 +112,12 @@ const MarketPlace = () => {
               <p className="font-grace text-[#4BAF47] text-lg md:text-2xl">
                 Modern agriculture types
               </p>
-              <p className="text-[#878680]">
+              <p className="text-sm md:text-base text-[#878680]">
                 We're here for you you from start
                 <br className="hidden md:block" /> to finish
               </p>
               <Link to="/waitlist">
-                <button className="w-[152px] h-[52px] bg-primary-100 text-white rounded-xl hover:bg-primary-200 transition duration-300 ease-in-out">
+                <button className="w-[125px] md:w-[152px] h-10 md:h-[52px] text-sm md:text-lg bg-primary-100 text-white rounded-xl hover:bg-primary-200 transition duration-300 ease-in-out">
                   Join our waitlist
                 </button>
               </Link>
@@ -212,7 +212,7 @@ const MarketPlace = () => {
         </div>
       </div>
       {/* Join The Waitlist */}
-      <div className="waitlist p-5 py-10 sm:p-10 sm:px-16">
+      <div className="waitlist p-5 sm:p-10 sm:px-16">
         <div
           className="wrapper rounded-3xl grid grid-cols-1 md:grid-cols-2 gap-12 p-5  sm:p-14 text-white"
           style={{
@@ -222,25 +222,25 @@ const MarketPlace = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="text space-y-8">
+          <div className="text space-y-5 md:space-y-10">
             <h3 className="text-3xl md:text-5xl font-bold ">
               Join the Waitlist!
             </h3>
-            <p className="text-white/80 text-sm sm:text-2xl font-medium ">
+            <p className="text-white/80 text-sm sm:text-2xl font-medium leading-6 md:leading-10">
               Be the first to experience the future of agritech with Pazelgreen.
               Sign up now to secure early access to our innovative tools and
               resources designed to help you grow your business, increase
-              efficiency, and stay ahead of the competition.{" "}
+              efficiency, and stay ahead of competition.{" "}
             </p>
-            <p className="text-white/80 text-sm sm:text-2xl font-medium">
+            <p className="text-white/80 text-sm sm:text-2xl font-medium pb-4 md:pb-0">
               Don&#39;t miss out—limited spots available!
             </p>
 
             <Link
               to="/waitlist"
-              className="bg-white text-primary-100 capitalize rounded-xl hover:bg-white hover:text-green-800 font-medium transition duration-300 ease-in-out p-4"
+              className="bg-white text-primary-100 rounded-xl hover:bg-white hover:text-green-800 font-semibold transition duration-300 ease-in-out p-4"
             >
-              Join the waitlist!
+              Join the Waitlist!
             </Link>
           </div>
           <div className="image relative min-h-[350px] sm:min-h-[417px] overflow-hidden rounded-2xl">
@@ -294,7 +294,7 @@ const MarketPlace = () => {
           </div>
         </div>
         <div className="text-center md:text-left my-4 text-2xl md:text-5xl font-bold">
-          Impact Expected <br /> Overtime
+          Impact Expected Overtime
         </div>
         <div className=" steps flex flex-col gap-3">
           <div className="step flex space-x-4 items-center bg-white p-8 px-10 relative border border-black">

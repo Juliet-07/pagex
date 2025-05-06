@@ -61,8 +61,8 @@ export function Testimonials() {
                 layout={true}
                 transition={{ duration: 0.35, ease: "easeInOut" }}
               >
-                <img src={Quotes} alt="double_quotes" width={50} height={50} />
-                <p className="font-medium text-neutral-600 leading-6  dark:text-neutral-400 text-lg">
+                <img src={Quotes} alt="double_quotes" width={30} height={30} />
+                <p className="font-medium text-neutral-600 leading-6  dark:text-neutral-400 md:text-lg">
                   {testimonial.content}
                 </p>
                 <div className="text-neutral-400 text-sm dark:text-neutral-500 flex items-center">

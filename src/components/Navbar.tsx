@@ -70,7 +70,7 @@ const Navbar = () => {
       )}
     >
       <div className="logo flex gap-2 items-center text-white  text-sm md:text-lg font-bold font-nunito">
-        <img src={Logo} alt="Logo" className="w-[67px] h-[68px]" />
+        <img src={Logo} alt="Logo" />
         <span>Pazelgreen</span>
       </div>
 

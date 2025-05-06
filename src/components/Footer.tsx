@@ -13,7 +13,7 @@ const Footer = () => {
           {/* a */}
           <div className="flex flex-col font-nunito text-black-100 gap-10">
             <div>
-              <p className="text-2xl font-semibold">Pazelgreen</p>
+              <p className="md:text-2xl font-semibold">Pazelgreen Technologies</p>
               <p className="mt-2">Agriculture made easy</p>
             </div>
             <div>
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
           {/* b */}
           <div className="grid gap-4 text-[#151411]/60 font-nunito">
-            <div className="font-semibold text-xl uppercase text-black-100">
+            <div className="font-semibold md:text-xl uppercase text-black-100">
               Pages
             </div>
             <Link to="/">Home</Link>
@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
           {/* c */}
           <div className=" text-[#1E1E1E]/80 font-nunito">
-            <div className="font-semibold text-xl uppercase text-black-100">
+            <div className="font-semibold md:text-xl uppercase text-black-100">
               products
             </div>
             <div>PAGEX</div>
@@ -89,7 +89,7 @@ const Footer = () => {
           </div>
           {/* e */}
           <div className=" text-[#1E1E1E]/80 font-nunito">
-            <div className="font-semibold text-xl uppercase text-black-100">
+            <div className="font-semibold md:text-xl uppercase text-black-100">
               subscribe to our newsletter
             </div>
             <p>Only valuable resource</p>
@@ -206,7 +206,7 @@ const Footer = () => {
         <div className="w-full flex flex-col items-center gap-2 mt-10">
           <div className="border-b border-black-100 w-full"></div>
           <p className="text-black-100 text-xs font-nunito">
-            All rights reserved by <b>Pazelgreen</b>
+            All rights reserved by <b>Pazelgreen Technologies</b>
           </p>
         </div>
       </div>
